@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --dotenv ./.env.production.local",
+    "dev": "nuxt dev --dotenv ./.env.development.local",
+    "generate": "nuxt generate --dotenv ./.env.production.local",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.9",
+    "@kikiutils/types": "^1.0.1",
+    "@unocss/nuxt": "^0.58.0",
+    "@vueuse/nuxt": "^10.7.0",
+    "nuxt": "^3.8.2",
+    "nuxt-purgecss": "^2.0.0",
+    "sass": "^1.69.5",
+    "vite-plugin-remove-console": "^2.2.0",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.25"
+  },
+  "dependencies": {
+    "axios": "^1.6.3",
+    "element-plus": "^2.7.6"
+  }
+}
