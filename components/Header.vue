@@ -1,15 +1,14 @@
 <template>
-    <div class="flex h-15!">
-        <el-icon :size="'20px'" @click="isCollapse = !isCollapse" class="self-center m-inline-4 cursor-pointer hover:color-d3d3d3">
-            <Fold v-if="!isCollapse" />
-            <Expand v-else />
-        </el-icon>
-        <h1 class="self-center select-none">Title</h1>
-        <div class="ms-auto self-center b-unset! mr-2 cursor-pointer hover:color-7194e5">
-            <el-icon :size="'22px'" @click="isDark = !isDark">
-                <Sunny v-if="!isDark" />
-                <Moon v-else />
-            </el-icon>
+    <div class="flex h-full w-full">
+		<div class="flex logo">
+            <nuxt-link to="/" class="flex items-center">
+                <img src="/images/Gal_game_LOGO.png" class="h-[80%] md:h-[100%] w-[120%] items-center">
+            </nuxt-link>
+        </div>
+        <div class="grow"></div>
+        <div name="memu" class="flex z-40">
+            <hambergur class="justify-center" />
+            <header-menu  />
         </div>
     </div>
 </template>
@@ -24,7 +23,7 @@ onMounted(() => {
 })
 
 watch(isDark, (v) => {
-    mainState.theme = v ? 'dark' : 'light';
+    mainState.theme = v ? 'light' : 'dark';
 })
 
 watch(isCollapse, (v) => {

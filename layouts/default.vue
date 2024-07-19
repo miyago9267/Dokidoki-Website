@@ -1,13 +1,10 @@
 <template>
 	<div class="h-s-screen">
 		<el-container class="h-full">
-			<el-header class="p-block-unset! p-inline-3! h-15! bg-color-77777780">
+			<el-header class="h-[130px]! mx-[5%]! pt-[20px]!">
 				<Header />
     		</el-header>
 			<el-container class="h-full">
-				<el-aside class="w-unset!">
-					<MainMenu />
-				</el-aside>
 				<el-container class="main-continaer">
 					<NuxtPage />
 				</el-container>
