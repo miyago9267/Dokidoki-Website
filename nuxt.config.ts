@@ -4,31 +4,41 @@ import removeConsole from 'vite-plugin-remove-console';
 export default defineNuxtConfig({
 	app: {
 		head: {
-			link: [{ rel: 'icon', href: '/favicon.ico' }],
+			link: [
+				{ rel: 'icon', href: '/favicon.ico' },
+				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Figtree&display=swap' }
+			],
 			noscript: [{ children: 'Javascript is required.' }],
 			title: ''
 		},
 		keepalive: true
 	},
+
 	devServer: {
 		host: process.env.DEV_SERVER_HOST,
 		port: Number(process.env.DEV_SERVER_PORT) || undefined
 	},
+
 	devtools: { enabled: false },
+
 	experimental: {
 		headNext: true,
 		// inlineSSRStyles: false
 	},
+
 	imports: {
 		dirs: ['./composables/**/*.ts']
 	},
+
 	modules: [
 		'@unocss/nuxt',
 		'@vueuse/nuxt',
 		'nuxt-purgecss',
 		'@element-plus/nuxt'
 	],
+
 	nitro: { compressPublicAssets: true },
+
 	purgecss: {
 		enabled: false,
 		safelist: {
@@ -51,7 +61,9 @@ export default defineNuxtConfig({
 			]
 		}
 	},
+
 	ssr: false,
+
 	typescript: {
 		tsConfig: {
 			compilerOptions: {
@@ -64,10 +76,14 @@ export default defineNuxtConfig({
 		},
 		typeCheck: true
 	},
+
 	vite: {
 		plugins: [removeConsole()]
 	},
-	elementPlus:{
+
+	elementPlus: {
 		themes: ['dark'],
-	}
+	},
+
+	compatibilityDate: '2024-07-17'
 });
