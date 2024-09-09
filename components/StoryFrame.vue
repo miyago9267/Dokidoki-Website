@@ -1,6 +1,6 @@
 <template>
     <div class="w-full">
-        <div class="text-[40px] font-black w-[90%] ml-[8%] my-[2%] text-[#C43E87]">故事背景</div>
+        <div class="text-[50px] font-black w-[90%] ml-[8%] my-[2%] text-[#C43E87]">故事背景</div>
         <div class="w-full">
             <img src="/images/bg1.png"
                 name="bg1"
