@@ -11,7 +11,8 @@ export default defineNuxtConfig({
 			noscript: [{ children: 'Javascript is required.' }],
 			title: ''
 		},
-		keepalive: true
+		keepalive: true,
+		baseURL: process.env.BASE_URL || '/',
 	},
 
 	devServer: {
@@ -37,7 +38,9 @@ export default defineNuxtConfig({
 		'@element-plus/nuxt'
 	],
 
-	nitro: { compressPublicAssets: true },
+	nitro: {
+		compressPublicAssets: true,
+	},
 
 	purgecss: {
 		enabled: false,

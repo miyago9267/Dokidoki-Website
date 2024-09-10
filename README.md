@@ -23,3 +23,12 @@ yarn dev
 ```bash=
 yarn build
 ```
+
+接著將`.output`資料夾內容放到伺服器上，運行`node server/index.mjs`即可
+或者可選用輸出後直接使用`yarn preview`運行預覽
+
+### 預覽
+
+```bash=
+yarn preview
+```
