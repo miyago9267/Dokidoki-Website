@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row">
+    <div class="flex md:flex-row flex-col">
 		<div class="flex flex-[3]">
 			<div class="w3-content" style="max-width:600px">
                 <div>
@@ -23,10 +23,10 @@
 				</div>
 			  </div>
 		</div>
-		<div class="flex flex-[5] flex-row mt-[15%]" style="max-width:500px">
-			<img class="h-[17%] w-[17%] mx-5" src="/images/cake1.png" />
-			<img class="h-[17%] w-[17%] mx-5" src="/images/cake2.png" />
-			<img class="h-[17%] w-[17%] mx-5" src="/images/cake3.png" />
+		<div class="flex flex-[5] flex-row h-[33%] w-full mt-[15%] md:justify-center justify-around" style="max-width:500px">
+			<img class="md:h-[45%] h-[30%] mx-5" src="/images/cake1.png" />
+			<img class="md:h-[45%] h-[30%] mx-5" src="/images/cake2.png" />
+			<img class="md:h-[45%] h-[30%] mx-5" src="/images/cake3.png" />
 		</div>
 	</div>
 </template>

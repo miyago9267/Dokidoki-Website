@@ -14,7 +14,7 @@
         <transition name="slide-fade">
             <ul v-if="isMenuOpen"
                 class="absolute flex flex-col px-3 pt-8 pb-3 text-xl font-black my-1 z-50 bg-gray-100 rounded-xl min-w-max"
-                style="top: 100%; right: 0%;"
+                style="top: 80%; right: 0%;"
             >
                 <li
                     class="flex block-center justify-end list-none hover:bg-[rgba(235,112,208,0.39)] rounded-xl"
