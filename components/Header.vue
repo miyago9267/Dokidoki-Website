@@ -2,7 +2,7 @@
     <div class="flex h-full w-full">
 		<div class="flex logo">
             <nuxt-link to="/" class="flex items-center">
-                <img src="/images/Gal_game_LOGO.png" class="h-[80%] md:h-[100%] w-[120%] items-center">
+                <img src="/images/doki11.png" class="h-[80%] md:h-[100%] w-[120%] items-center">
             </nuxt-link>
         </div>
         <div class="grow"></div>

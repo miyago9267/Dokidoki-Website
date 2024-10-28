@@ -23,7 +23,7 @@
                 <p
                     class="justify-center text-[#C43E87] text-[2vw] p-7 mt-[4%] md:mt-[5%] font-black text-shadow-[#C43E87]"
                     style="text-shadow: -0.3px 0 #C43E87, 0 0.3px #C43E87, 0.3px 0 #C43E87, 0 -0.3px #C43E87;background-color: #fcf0f2;">
-                    本遊戲由幹幹貓工作室進行開發，2024年絕讚籌備中！</p>
+                    本遊戲由樹吧啦係工作室進行開發，2024年絕讚籌備中！</p>
             </div>
         </div>
     </div>
