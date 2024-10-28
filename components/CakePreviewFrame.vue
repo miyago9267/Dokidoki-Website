@@ -1,6 +1,6 @@
 <template>
-    <div class="flex md:flex-row flex-col">
-		<div class="flex flex-[3]">
+    <div class="flex items-center justify-center h-full">
+		<div class="flex">
 			<div class="w3-content" style="max-width:600px">
                 <div>
                     <img v-if="currentDiv==1" class="slide w-full" src="/images/first.png">
@@ -22,11 +22,6 @@
 				  </div>
 				</div>
 			  </div>
-		</div>
-		<div class="flex flex-[5] flex-row h-[33%] w-full mt-[15%] md:justify-center justify-around" style="max-width:500px">
-			<img class="md:h-[45%] h-[30%] mx-5" src="/images/cake1.png" />
-			<img class="md:h-[45%] h-[30%] mx-5" src="/images/cake2.png" />
-			<img class="md:h-[45%] h-[30%] mx-5" src="/images/cake3.png" />
 		</div>
 	</div>
 </template>
