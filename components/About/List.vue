@@ -1,6 +1,6 @@
 <template>
     <div class="w-full ">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3 place-items-center">
             <AboutMember
                 v-for="mem in showMember"
                 class="w-[15rem]! h-[25rem]! my-3 "
