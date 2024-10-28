@@ -12,8 +12,8 @@
                 <div v-for="r in props.role">
                     <p class="text-[#000] my-1">{{ r }}</p>
                 </div>
-                <div v-for="link in linkList">
-                    <p class="text-[#000] my-1">{{ link.social }}</p>
+                <div>
+                    <AboutLink :link="props.linkList || {}" />
                 </div>
             </div>
         </div>
@@ -23,18 +23,9 @@
 <script lang="ts" setup>
 
 import { defineProps } from 'vue';
-
-interface Link {
-    social?: string;
-}
-
-interface Member {
-    photo: string;
-    name: string;
-    role: string[];
-    linkList: Link[];
-}
+import type { Member } from '~/types/about/types'
 
 const props = defineProps<Member>();
+
 
 </script>

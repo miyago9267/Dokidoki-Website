@@ -7,7 +7,7 @@
                 :photo="mem.photo"
                 :name="mem.name"
                 :role="mem.role"
-                :linkList="mem.linkList"
+                :linkList="mem.linkList || {}"
             />
         </div>
     </div>
@@ -16,86 +16,98 @@
 <script lang="ts" setup>
 
 import { ref } from 'vue';
+import type { Member } from '~/types/about/types'
 
-interface Link {
-    social?: string;
-}
-
-interface Member {
-    photo: string;
-    name: string;
-    role: string[];
-    linkList: Link[];
-}
 
 const showMember = ref<Member[]>([
     {
-        photo: 'https://drive.miyago9267.com/d/file/img/mygo/%E6%88%91%E4%B9%9F%E4%B8%80%E6%A8%A3.jpg?t=1729564080395',
-        name: '統籌',
+        photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
+        name: '余旻真',
         role: ['專案統籌'],
-        linkList: [
-            {'social': 'https://github.com'}
-        ]
+        linkList: {
+        }
     },
     {
-        photo: 'https://drive.miyago9267.com/d/file/img/mygo/%E5%A6%B3%E6%98%AF%E4%BE%86%E6%89%BE%E6%88%91%E5%90%B5%E6%9E%B6%E7%9A%84%E5%97%8E.jpg?t=1729584516644',
-        name: '總監',
+        photo: '/images/member_avatar/avatar2.png',
+        name: 'セラ',
         role: ['專案總監'],
-        linkList: []
+        linkList: {
+            'youtube': 'https://www.youtube.com/@HaitoSara_Yuxi',
+            'twitter': 'https://x.com/haito_sara',
+            'ig': 'https://www.instagram.com/haito_sara/',
+        }
     },
     {
-        photo: 'https://drive.miyago9267.com/d/file/img/mygo/%E9%80%99%E7%AE%97%E4%BB%80%E9%BA%BC.jpg?t=1729584516644',
-        name: '美宣公關',
+        photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
+        name: '凡勤',
         role: ['行銷公關'],
-        linkList: []
+        linkList: {
+            'ig': 'https://www.instagram.com/redlotus_1413/profilecard/?igsh=aWVpZzYxdDF6eDRq',
+            'plurk': 'https://www.plurk.com/jennt1413121'
+        }
     },
     {
-        photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '社群經理',
+        photo: '/images/member_avatar/avatar7.png',
+        name: '辰',
         role: ['社群企劃'],
-        linkList: []
+        linkList: {
+            'tiktok': 'https://www.tiktok.com/@chen_xin_12?_t=8qkUz3ZHKLP&_r=1'
+        }
     },
     {
-        photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '平面設計A',
+        photo: '/images/member_avatar/avatar3.png',
+        name: '夏語寒',
         role: ['平面設計'],
-        linkList: []
+        linkList: {
+            'ig': 'https://www.instagram.com/xia.yu.han_51?igsh=aXBmZGN2dnNldW9i&utm_source=qr'
+        }
     },
     {
         photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '平面設計B',
+        name: '柏苒一棵樹',
         role: ['平面設計'],
-        linkList: []
+        linkList: {
+            'facebook': 'https://www.facebook.com/profile.php?id=100028325873632&mibextid=ZbWKwL',
+            'plurk': 'https://www.plurk.com/induskailar'
+        }
     },
     {
         photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '平面設計C',
+        name: '楊雅鈞',
         role: ['平面設計'],
-        linkList: []
+        linkList: {}
     },
     {
         photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '萬能阿軟',
+        name: '阿軟',
         role: ['互動設計'],
-        linkList: []
+        linkList: {
+            'twitch': 'https://www.twitch.tv/soft_0101',
+            'ig': 'https://www.instagram.com/revolver_0101/'
+        }
     },
     {
         photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '互動設計B',
+        name: '阿狼',
         role: ['互動設計'],
-        linkList: []
+        linkList: {
+            'youtube': 'https://youtube.com/channel/UCreSshHGi8CPrWPU1RwmWew?si=IWhe4e4FW5LNVTRD',
+            'ig': 'https://www.instagram.com/shyine_wolf/'
+        }
     },
     {
-        photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '互動設計C',
+        photo: '/images/member_avatar/avatar4.png',
+        name: '丸子',
         role: ['互動設計'],
-        linkList: []
+        linkList: {
+            'youtube': 'https://youtube.com/@wanzi_07?si=iG17BufRAoSJJDoh'
+        }
     },
     {
         photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
         name: '影像企劃',
         role: ['影像企劃'],
-        linkList: []
+        linkList: {}
     }
 ]);
 
