@@ -6,7 +6,8 @@ export default defineNuxtConfig({
 		head: {
 			link: [
 				{ rel: 'icon', href: '/logo.ico' },
-				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Figtree&display=swap' }
+				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Figtree&display=swap' },
+				{ rel: 'stylesheet', href: '"https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Zen+Maru+Gothic&display=swap"' }
 			],
 			noscript: [{ children: 'Javascript is required.' }],
 			title: ''
