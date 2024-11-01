@@ -1,7 +1,7 @@
 <template>
-    <div class="flex items-center justify-center h-full">
-		<div class="flex">
-			<div class="w3-content" style="max-width:600px">
+    <div class="flex lg:flex-row flex-col">
+		<div class="flex flex-[3] mb-[10%] lg:mr-[1%]">
+			<div>
                 <div>
                     <img v-if="currentDiv==1" class="slide w-full" src="/images/first.png">
                     <img v-else-if="currentDiv==2" class="slide w-full" src="/images/second.png">
@@ -22,6 +22,14 @@
 				  </div>
 				</div>
 			  </div>
+		</div>
+		<div class="flex flex-[3] flex-row w-full lg:justify-center justify-around lg:ml-[1%]">
+			<iframe class="w-full h-[500px] lg:max-h-[400px] mb-[10%] max-h-[700px]"
+				src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen>
+			</iframe>
 		</div>
 	</div>
 </template>
