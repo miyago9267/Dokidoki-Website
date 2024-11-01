@@ -45,6 +45,11 @@ const gridStyle = computed(() => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Zen+Maru+Gothic&display=swap');
+[data-text] {
+	font-family: "Zen Maru Gothic", sans-serif !important;
+}
+
 .box::after {
   content: attr(data-text);
   position: absolute;
