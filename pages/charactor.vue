@@ -8,7 +8,7 @@
 		<div v-for="chara in CharaList" key="chara.index">
 			<CharactorInfo
 				v-if="currentPanel === chara.panel"
-				class="mb-[3%] pb-[2%] h-screen w-full"
+				class="mb-[3%] pb-[18%] lg:pb-[3%] w-full"
 				:maincolor="chara.maincolor"
 				:image="chara.image"
 				:name="chara.name"

@@ -1,13 +1,13 @@
 <template>
-<div class="flex md:flex-row flex-col mb-5 pt-[10%] h-screen items-center">
+<div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[530px] items-center">
     <div class="flex w-[45%] md:h-full h-1/2 relative justify-center">
-        <div class="md:w-[90%] md:h-[45%] w-[100%] h-[50%] mt-10 absolute z-[-1] left-0"
+        <div class="md:w-[90%] md:h-[45%] w-[150%] h-[50%] mt-10 absolute z-[-1] md:left-0"
             :style="{ backgroundColor: props.maincolor }"
         ></div>
-        <img :src="props.image" alt="" class="md:w-[55%] md:h-[75%] w-[80%] h-[100%] md:absolute md:bottom-60 md:right-15">
+        <img :src="props.image" alt="" class="md:w-[292px] w-[80%] h-[100%] md:absolute md:bottom-10 md:right-15">
     </div>
     <div class="flex flex-col h-full w-[55%] md:items-start items-center">
-        <p class="nerd md:text-6xl text-4xl mb-1 font-bold mt-0 md:text-left md:mx-25">{{props.name}}</p>
+        <p class="nerd md:text-6xl text-4xl mb-[0.5rem] font-bold mt-0 md:text-left md:mx-25">{{props.name}}</p>
         <div class="md:w-120 w-40 h-1 bg-[#D5071F] md:mx-25 mb-4"></div>
         <ul class="flex flex-col items-start list-none list-inside pl-0 md:mx-30">
             <li class="md:text-xl text-lg mb-2">年齡　|　{{ props.age }}</li>
@@ -44,3 +44,11 @@ interface CharaInfo {
 const props = defineProps<CharaInfo>();
 
 </script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Zen+Maru+Gothic&display=swap');
+
+p, li {
+    font-family: "Playwrite GB S", cursive;
+}
+</style>
