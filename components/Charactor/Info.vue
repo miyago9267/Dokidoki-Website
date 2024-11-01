@@ -16,7 +16,7 @@
             <li class="md:text-xl text-lg mb-2">愛好　|　{{ props.hobbies }}</li>
         </ul>
         <div class="flex flex-col list-inside items-center w-[100%] md:h-320 h-full">
-            <p v-html="props.info" class="text-left text-gray-400 w-90 md:w-[80%] md:text-lg text tracking-widest md:leading-[30px] leading-[1.5rem] py-3 break-words mb-0">
+            <p v-html="props.info" class="text-left text-gray-600 w-90 md:w-[80%] md:text-lg text tracking-widest md:leading-[30px] leading-[1.5rem] py-3 break-words mb-0">
             </p>
             <p v-html="props.subInfo" class="text-left text-[#f5b4bc] w-90 md:w-[80%] md:text-lg text tracking-widest md:leading-[40px] leading-[2.0rem] py-3 break-words mt-0">
             </p>

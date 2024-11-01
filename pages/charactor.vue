@@ -43,7 +43,7 @@ interface CharaInfo {
 
 const CharaList: CharaInfo[] = [
 	{
-		maincolor: '#D5071F',
+		maincolor: '#EA99B8',
 		image: '/images/1.png',
 		name: '紅月 茜',
 		age: '16歲，高一生',
@@ -55,7 +55,7 @@ const CharaList: CharaInfo[] = [
 		panel: '1'
 	},
 	{
-		maincolor: '#D26614',
+		maincolor: '#F2DB92',
 		image: '/images/2.png',
 		name: '朝日奈 胡桃',
 		age: '14歲，高一生',
@@ -67,7 +67,7 @@ const CharaList: CharaInfo[] = [
 		panel: '2'
 	},
 	{
-		maincolor: '#633894',
+		maincolor: '#A281BC',
 		image: '/images/3.png',
 		name: '天井 薰',
 		age: '17歲，高二生',
@@ -79,7 +79,7 @@ const CharaList: CharaInfo[] = [
 		panel: '3'
 	},
 	{
-		maincolor: '#53C0CA',
+		maincolor: '#80ADE1',
 		image: '/images/4.png',
 		name: '杉野 榛',
 		age: '18歲，高三生',
@@ -91,7 +91,7 @@ const CharaList: CharaInfo[] = [
 		panel: '4'
 	},
 	{
-		maincolor: '#53C0CA',
+		maincolor: '#8D3945',
 		image: '/images/5.png',
 		name: '白雪 楓',
 		age: '19歲，高三生',
@@ -103,7 +103,7 @@ const CharaList: CharaInfo[] = [
 		panel: '5'
 	},
 	{
-		maincolor: '#53C0CA',
+		maincolor: '#A7D090',
 		image: '/images/6.png',
 		name: '小鳥遊 邊瑠',
 		age: '17歲，高二生',

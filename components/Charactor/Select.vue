@@ -28,32 +28,32 @@ interface TabEmits {
 
 const SelectBar: CharaHead[] = [
     {
-        color: '#D5071F',
+        color: '#EA99B8',
         image: '/images/1.png',
         controll_panel: '1'
     },
     {
-        color: '#D26614',
+        color: '#F2DB92',
         image: '/images/2.png',
         controll_panel: '2'
     },
     {
-        color: '#633894',
+        color: '#A281BC',
         image: '/images/3.png',
         controll_panel: '3'
     },
     {
-        color: '#53C0CA',
+        color: '#80ADE1',
         image: '/images/4.png',
         controll_panel: '4'
     },
     {
-        color: '#6D607B',
+        color: '#8D3945',
         image: '/images/5.png',
         controll_panel: '5'
     },
     {
-        color: '#6E2B17',
+        color: '#A7D090',
         image: '/images/6.png',
         controll_panel: '6'
     }
