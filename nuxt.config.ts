@@ -9,12 +9,20 @@ export default defineNuxtConfig({
 				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Figtree&display=swap' },
 				{ rel: 'stylesheet', href: '"https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Zen+Maru+Gothic&display=swap"' }
 			],
+			script: [
+				{
+				  src: 'https://www.instagram.com/embed.js',
+				  async: true,
+				},
+			],
 			noscript: [{ children: 'Javascript is required.' }],
 			title: ''
 		},
 		keepalive: true,
 		baseURL: process.env.BASE_URL || '/',
 	},
+
+	buildDir: 'Dokidoki-Website',
 
 	devServer: {
 		host: process.env.DEV_SERVER_HOST,
@@ -41,6 +49,9 @@ export default defineNuxtConfig({
 
 	nitro: {
 		compressPublicAssets: true,
+		output: {
+			dir: 'Dokidoki-Website'
+		}
 	},
 
 	purgecss: {
