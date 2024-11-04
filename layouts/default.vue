@@ -1,5 +1,5 @@
 <template>
-	<div class="h-s-screen">
+	<div class="min-h-screen bg-[#F6F1F1]">
 		<el-container class="h-full">
 			<el-header class="h-[130px]! mx-[5%]! pt-[20px]!">
 				<Header />

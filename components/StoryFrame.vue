@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
         <div class="text-[50px] font-black w-[90%] ml-[8%] my-[2%] text-[#C43E87]">故事背景</div>
-        <div class="w-full">
+        <div class="relative w-full z-[0]">
             <img src="/images/bg1.png"
                 name="bg1"
                 class="absolute w-[95%] lg:h-[65%] right-0 z-[-1]"
