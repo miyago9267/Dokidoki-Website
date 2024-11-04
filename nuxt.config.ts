@@ -22,8 +22,6 @@ export default defineNuxtConfig({
 		baseURL: process.env.BASE_URL || '/',
 	},
 
-	buildDir: 'Dokidoki-Website',
-
 	devServer: {
 		host: process.env.DEV_SERVER_HOST,
 		port: Number(process.env.DEV_SERVER_PORT) || undefined
