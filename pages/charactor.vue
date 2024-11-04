@@ -121,3 +121,11 @@ const handleToggle = (value: string) => {
 }
 
 </script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Zen+Maru+Gothic&display=swap');
+
+h1 {
+    font-family: "Playwrite GB S", cursive;
+}
+</style>

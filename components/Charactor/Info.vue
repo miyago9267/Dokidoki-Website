@@ -1,6 +1,6 @@
 <template>
 <div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[530px] items-center">
-    <div class="flex w-[45%] md:h-full h-1/2 relative justify-center">
+    <div class="flex w-[45%] md:h-full h-1/2 relative justify-center z-0">
         <div class="md:w-[90%] md:h-[45%] w-[150%] h-[50%] mt-10 absolute z-[-1] md:left-0"
             :style="{ backgroundColor: props.maincolor }"
         ></div>
@@ -46,9 +46,5 @@ const props = defineProps<CharaInfo>();
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Zen+Maru+Gothic&display=swap');
 
-p, li {
-    font-family: "Playwrite GB S", cursive;
-}
 </style>
