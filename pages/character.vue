@@ -1,12 +1,12 @@
 <template>
 	<div class="w-full">
 		<div class="w-full flex flex-col items-center my-[10px]">
-			<h1 class="text-4xl my-2 text-[#de7aca]">Charactor</h1>
+			<h1 class="text-4xl my-2 text-[#de7aca]">Character</h1>
 			<div class="md:w-full w-40 h-1 bg-[#de7aca] md:mx-25"></div>
 		</div>
-		<CharactorSelect class="mt-5" @toggle="handleToggle"></CharactorSelect>
+		<CharacterSelect class="mt-5" @toggle="handleToggle"></CharacterSelect>
 		<div v-for="chara in CharaList" key="chara.index">
-			<CharactorInfo
+			<CharacterInfo
 				v-if="currentPanel === chara.panel"
 				class="mb-[3%] pb-[18%] lg:pb-[3%] w-full"
 				:maincolor="chara.maincolor"

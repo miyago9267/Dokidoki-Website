@@ -3,7 +3,7 @@
         class="trans-grid relative grid md:gap-4 gap-1 md:h-full justify-center transition-all duration-[500]"
         :style="gridStyle"
     >
-        <div v-for="(item, index) in CharactorList" :key="index"
+        <div v-for="(item, index) in CharacterList" :key="index"
             class="flex relative bg-cover transition-all duration-[500] bg-custom-img box overflow-hidden"
             :style="`--img: url(${item.imageURL}); --color: ${item.color}`"
             :data-text="item.altText"
@@ -17,13 +17,13 @@
 
 <script setup lang="ts">
 
-interface Charactor {
+interface Character {
     imageURL: string;
     altText: string;
     color: string;
 }
 
-const CharactorList: Charactor[] = [
+const CharacterList: Character[] = [
     { imageURL: '/images/gal_game-1.png', altText: '紅月 茜', color: '#D5071F' },
     { imageURL: '/images/gal_game-2.png', altText: '朝日奈 胡桃', color: '#D26614' },
     { imageURL: '/images/gal_game-3.png', altText: '天井 薰', color: '#633894' },
@@ -35,7 +35,7 @@ const CharactorList: Charactor[] = [
 const hoverIndex = ref<number>(-1);
 
 const gridStyle = computed(() => {
-  const columns = CharactorList.map((_, index) => (index === hoverIndex.value ? 'var(--fr-scale, 2fr)' : '1fr')).join(' ');
+  const columns = CharacterList.map((_, index) => (index === hoverIndex.value ? 'var(--fr-scale, 2fr)' : '1fr')).join(' ');
   return {
     gridTemplateColumns: columns,
     transition: 'grid-template-columns 0.4s ease'

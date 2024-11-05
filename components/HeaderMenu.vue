@@ -24,7 +24,7 @@ interface Menu {
 const menuList: Menu[] = [
     {name: '首頁', path: '/'},
     {name: '簡介', path: '/story'},
-    {name: '角色介紹', path: '/charactor'},
+    {name: '角色介紹', path: '/character'},
     {name: '關於我們', path: '/about'}
 ]
 
