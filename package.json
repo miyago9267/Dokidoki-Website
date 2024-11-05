@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build --dotenv ./.env.production.local",
+    "build": "nuxt build --dotenv ./.env.production.local && zip -r Dokidoki.zip Dokidoki-Website",
     "dev": "nuxt dev --dotenv ./.env.development.local",
     "generate": "nuxt generate --dotenv ./.env.production.local",
     "postinstall": "nuxt prepare",

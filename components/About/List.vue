@@ -105,9 +105,12 @@ const showMember = ref<Member[]>([
     },
     {
         photo: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
-        name: '影像企劃',
+        name: '偷塔',
         role: ['影像企劃'],
-        linkList: {}
+        linkList: {
+            'tiktok': 'https://www.tiktok.com/@stealtower',
+            'facebook': 'https://www.facebook.com/profile.php?id=100013193771561&mibextid=LQQJ4d'
+        }
     }
 ]);
 
