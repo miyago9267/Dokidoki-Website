@@ -2,13 +2,13 @@
     <div class="flex h-full w-full">
 		<div class="flex logo">
             <nuxt-link to="/" class="flex items-center">
-                <img src="/images/doki11.png" class="h-[80%] md:h-[100%] w-[120%] items-center">
+                <img src="/images/doki11.png" class="h-[100%] md:h-[120%] w-[144%] items-center">
             </nuxt-link>
         </div>
         <div class="grow"></div>
         <div name="memu" class="flex z-40">
-            <hambergur class="justify-center" />
-            <header-menu  />
+            <HeaderHambergur class="justify-center" />
+            <HeaderMenu  />
         </div>
     </div>
 </template>
