@@ -16,3 +16,23 @@ export interface Member {
     role: string[];
     linkList?: Link;
 }
+
+interface Intro {
+    '年齡': string;
+    '星座': string;
+    '社團': string;
+    '愛好': string;
+}
+
+export interface CharaInfo {
+	maincolor: string;
+	image: string;
+    bg: string;
+    item: string;
+    name: string;
+    intro: Intro;
+    info: string;
+    subInfo: string;
+	panel: string;
+    hashtags: string[];
+}
