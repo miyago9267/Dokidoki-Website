@@ -14,11 +14,13 @@
 				:bg="chara.bg"
 				:item="chara.item"
 				:name="chara.name"
+				:spellname="chara.spellname"
 				:intro="chara.intro"
 				:info="chara.info"
 				:subInfo="chara.subInfo"
 				:panel="chara.panel"
 				:hashtags="chara.hashtags"
+				:clothe="chara.clothe"
 			/>
 		</div>
 	</div>

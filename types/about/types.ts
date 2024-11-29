@@ -24,15 +24,23 @@ interface Intro {
     '愛好': string;
 }
 
+export interface Clothe {
+    '服飾一': string;
+    '服飾二': string;
+    '服飾三': string;
+}
+
 export interface CharaInfo {
 	maincolor: string;
 	image: string;
     bg: string;
     item: string;
+    spellname: string;
     name: string;
     intro: Intro;
     info: string;
     subInfo: string;
 	panel: string;
     hashtags: string[];
+    clothe: Clothe;
 }
