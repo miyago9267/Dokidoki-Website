@@ -6,22 +6,24 @@
 		</div>
 		<CharacterSelect class="mt-5" @toggle="handleToggle"></CharacterSelect>
 		<div v-for="chara in CharaList" key="chara.index">
-			<CharacterInfoRe
-				v-if="currentPanel === chara.panel"
-				class="mb-[3%] pb-[18%] lg:pb-[3%] w-full"
-				:maincolor="chara.maincolor"
-				:image="chara.image"
-				:bg="chara.bg"
-				:item="chara.item"
-				:name="chara.name"
-				:spellname="chara.spellname"
-				:intro="chara.intro"
-				:info="chara.info"
-				:subInfo="chara.subInfo"
-				:panel="chara.panel"
-				:hashtags="chara.hashtags"
-				:clothe="chara.clothe"
-			/>
+			<transition name="fade-left">
+				<CharacterInfoRe
+					v-if="currentPanel === chara.panel"
+					class="mb-[3%] pb-[18%] lg:pb-[3%] w-full"
+					:maincolor="chara.maincolor"
+					:image="chara.image"
+					:bg="chara.bg"
+					:item="chara.item"
+					:name="chara.name"
+					:spellname="chara.spellname"
+					:intro="chara.intro"
+					:info="chara.info"
+					:subInfo="chara.subInfo"
+					:panel="chara.panel"
+					:hashtags="chara.hashtags"
+					:clothe="chara.clothe"
+				/>
+			</transition>
 		</div>
 	</div>
 </template>
@@ -46,5 +48,17 @@ const handleToggle = (value: string) => {
 
 h1 {
     font-family: "Playwrite GB S", cursive;
+}
+
+.fade-left-enter-active, .fade-left-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-left-enter-from, .fade-left-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-left-enter-to, .fade-left-leave-from {
+  opacity: 1;
+  transform: translateX(0);
 }
 </style>

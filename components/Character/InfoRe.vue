@@ -9,12 +9,12 @@
             <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.maincolor }">#{{ props.hashtags[1] }}</p>
         </div>
     </div>
-    <div class="flex flex-col h-full w-[60%] md:items-start items-center z-[10]">
+    <div class="flex flex-col h-[110%] w-[60%] md:items-start items-center z-[10]">
         <p class="md:w-[95%] nerd md:text-4xl text-xl mb-[0.5rem] font-bold mt-0 md:text-right md:mr-10"
         :style="{ color: props.maincolor }">{{props.spellname}}</p>
         <p class="md:w-[95%] nerd md:text-6xl text-4xl mb-[0.5rem] font-bold mt-0 md:text-right md:mr-10">{{props.name}}</p>
         <div class="md:w-full w-40 h-1 bg-[#D5071F] md:mx-2 my-2 z-[20]"></div>
-        <p v-html="props.info" class="text-left text-black font-bold w-90 md:w-[80%] md:text-lg text tracking-widest md:leading-[30px] leading-[1.5rem] py-3 break-words mb-0">
+        <p v-html="props.info" class="text-left text-black font-bold w-90 md:w-[80%] md:text-xl text-lg tracking-widest md:leading-[30px] leading-[1.5rem] py-3 break-words mb-0">
         </p>
         <ul class="flex flex-col items-start list-none list-inside pl-0 md:mr-30">
             <li class="md:text-xl text-lg mb-2 text-center" v-for="(val) in introArr">

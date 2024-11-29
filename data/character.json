@@ -18,8 +18,8 @@
         "hashtags": ["助人心切", "樂觀開朗"],
         "clothe": {
             "服飾一": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾二": "/images/1.png",
-            "服飾三": "/images/character/akane/Akane_uniform_normal.png"
+            "服飾二": "/images/character/akane/Akane_JHuniform_normal.png",
+            "服飾三": "/images/character/akane/Akane_uniform_surprise.png"
         }
     },
     {
@@ -40,9 +40,9 @@
         "panel": "2",
         "hashtags": ["天才少女", "完美主義"],
         "clothe": {
-            "服飾一": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾二": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾三": "/images/character/akane/Akane_uniform_normal.png"
+            "服飾一": "/images/2.png",
+            "服飾二": "/images/2.png",
+            "服飾三": "/images/2.png"
         }
     },
     {
@@ -63,9 +63,9 @@
         "panel": "3",
         "hashtags": ["科學癡", "毒舌"],
         "clothe": {
-            "服飾一": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾二": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾三": "/images/character/akane/Akane_uniform_normal.png"
+            "服飾一": "/images/3.png",
+            "服飾二": "/images/3.png",
+            "服飾三": "/images/3.png"
         }
     },
     {
@@ -86,9 +86,9 @@
         "panel": "4",
         "hashtags": ["體保生", "心口不一"],
         "clothe": {
-            "服飾一": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾二": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾三": "/images/character/akane/Akane_uniform_normal.png"
+            "服飾一": "/images/4.png",
+            "服飾二": "/images/4.png",
+            "服飾三": "/images/4.png"
         }
     },
     {
@@ -109,9 +109,9 @@
         "panel": "5",
         "hashtags": ["助人心切", "樂觀開朗"],
         "clothe": {
-            "服飾一": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾二": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾三": "/images/character/akane/Akane_uniform_normal.png"
+            "服飾一": "/images/5.png",
+            "服飾二": "/images/5.png",
+            "服飾三": "/images/5.png"
         }
     },
     {
@@ -120,7 +120,7 @@
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/hennru/item.png",
         "name": "小鳥遊 邊瑠",
-        "spellname": "Takanashi Hennru",
+        "spellname": "Takanashi Bru",
         "intro": {
             "年齡": "17歲，高二生",
             "星座": "水瓶座",
@@ -132,9 +132,9 @@
         "panel": "6",
         "hashtags": ["助人心切", "樂觀開朗"],
         "clothe": {
-            "服飾一": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾二": "/images/character/akane/Akane_uniform_normal.png",
-            "服飾三": "/images/character/akane/Akane_uniform_normal.png"
+            "服飾一": "/images/6.png",
+            "服飾二": "/images/6.png",
+            "服飾三": "/images/6.png"
         }
     }
 ]
