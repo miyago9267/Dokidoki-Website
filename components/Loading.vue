@@ -1,8 +1,7 @@
 <template>
     <div class="fixed inset-0 bg-white flex items-center justify-center z-50" v-if="show">
     <div class="flex flex-col items-center">
-        <img src="/images/doki11.png" alt="Logo" class="w-[30%] animate-bounce" />
-        <p class="text-2xl font-semibold text-gray-600 mt-4">少女祈禱中...</p>
+        <img src="/images/doki11.png" alt="Logo" class="md:w-[30%] w-[65%] animate-bounce" />
     </div>
     </div>
 </template>

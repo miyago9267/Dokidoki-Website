@@ -19,7 +19,7 @@
                 <li
                     class="flex block-center justify-end list-none hover:bg-[rgba(235,112,208,0.39)] rounded-xl"
                     v-for="item in menuList" :key="item.name">
-                        <nuxt-link :to="item.path" class="px-8 py-4 block-center no-underline text-[#262626] whitespace-nowrap">
+                        <nuxt-link @click="closeMenu" :to="item.path" class="px-8 py-4 block-center no-underline text-[#262626] whitespace-nowrap">
                             {{ item.name }}
                         </nuxt-link>
                 </li>
@@ -33,7 +33,10 @@ import { ref } from 'vue';
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
-    console.log('toggleMenu')
+}
+
+const closeMenu = () => {
+    isMenuOpen.value = false
 }
 
 const isMenuOpen = ref(false)

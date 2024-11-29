@@ -1,13 +1,13 @@
 <template>
-    <div name="cg-background" class="w-full relative">
+    <div name="cg-background" class="flex justify-center items-center w-full relative">
         <img class="bg object-cover opacity-[30%] w-full h-full absolute z-0" />
-        <div class="flex flex-col items-center h-full">
+        <div class="flex flex-col items-center h-full md:pt-[25px] pt-[50px]">
             <IndexIntroTextblock class="my-[10px] md:h-[200px] h-[80px] w-[90%] mx-[5%] z-10" />
             <img src="/images/doki11.png" class="lg:w-[30%] w-[50%] opacity-[100%] mb-[30px] z-10" />
             <div class="inline-block md:px-10 px-5 py-0 bg-pink-300 text-black md:text-2xl text-sm font-bold rounded-lg border-2 border-pink-400 text-center cursor-pointer hover:bg-pink-600 z-[10]">
-                <a><p class="py-0 md:my-[10px] my-[3px]">立即下載  &gt;</p></a>
+                <a><p class="py-0 md:my-[10px] my-[3px]">立即下載</p></a>
             </div>
-            <AboutLink class="z-10 w-[150%] h-[150%]" :link="linkList || {}" />
+            <IndexLink class="z-10 w-[150%]" :link="linkList || {}" />
         </div>
     </div>
 </template>
