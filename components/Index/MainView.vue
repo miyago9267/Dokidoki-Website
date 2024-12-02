@@ -5,7 +5,7 @@
             <IndexIntroTextblock class="my-[10px] md:h-[200px] h-[80px] w-[90%] mx-[5%] z-10" />
             <img src="/images/doki11.png" class="lg:w-[30%] w-[50%] opacity-[100%] mb-[30px] z-10" />
             <div class="inline-block md:px-10 px-5 py-0 bg-pink-300 text-black md:text-2xl text-sm font-bold rounded-lg border-2 border-pink-400 text-center cursor-pointer hover:bg-pink-600 z-[10]">
-                <a><p class="py-0 md:my-[10px] my-[3px]">立即下載</p></a>
+                <a class="text-black no-underline" href="https://airem.itch.io/play-with-me-escape-room"><p class="py-0 md:my-[10px] my-[3px]">立即下載</p></a>
             </div>
             <IndexLink class="z-10 w-[150%]" :link="linkList || {}" />
         </div>

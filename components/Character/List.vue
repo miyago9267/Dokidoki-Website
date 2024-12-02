@@ -24,12 +24,12 @@ interface Character {
 }
 
 const CharacterList: Character[] = [
-    { imageURL: '/images/gal_game-1.png', altText: '紅月 茜', color: '#D5071F' },
-    { imageURL: '/images/gal_game-2.png', altText: '朝日奈 胡桃', color: '#D26614' },
-    { imageURL: '/images/gal_game-3.png', altText: '天井 薰', color: '#633894' },
-    { imageURL: '/images/gal_game-4.png', altText: '杉野 榛', color: '#53C0CA' },
-    { imageURL: '/images/gal_game-5.png', altText: '白雪 楓', color: '#6D607B' },
-    { imageURL: '/images/gal_game-6.png', altText: '小鳥遊 邊瑠', color: '#6E2B17' },
+    { imageURL: '/images/placehold/akane.png', altText: '紅月 茜', color: '#D5071F' },
+    { imageURL: '/images/placehold/kurumi.png', altText: '朝日奈 胡桃', color: '#D26614' },
+    { imageURL: '/images/placehold/kaoru.png', altText: '天井 薰', color: '#633894' },
+    { imageURL: '/images/placehold/hari.png', altText: '杉野 榛', color: '#53C0CA' },
+    { imageURL: '/images/placehold/kaede.png', altText: '白雪 楓', color: '#6D607B' },
+    { imageURL: '/images/placehold/beru.png', altText: '小鳥遊 邊瑠', color: '#6E2B17' },
 ];
 
 const hoverIndex = ref<number>(-1);
