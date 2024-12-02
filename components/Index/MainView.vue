@@ -7,7 +7,7 @@
             <div class="inline-block md:px-10 px-5 py-0 bg-pink-300 text-black md:text-2xl text-sm font-bold rounded-lg border-2 border-pink-400 text-center cursor-pointer hover:bg-pink-600 z-[10]">
                 <a class="text-black no-underline" href="https://airem.itch.io/play-with-me-escape-room"><p class="py-0 md:my-[10px] my-[3px]">立即下載</p></a>
             </div>
-            <IndexLink class="z-10 w-[150%]" :link="linkList || {}" />
+            <IndexLink class="z-10" :link="linkList || {}" />
         </div>
     </div>
 </template>

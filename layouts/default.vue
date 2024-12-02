@@ -9,7 +9,7 @@
 				<el-container class="main-continaer">
 					<NuxtPage />
 				</el-container>
-				<el-footer class="w-screen z-[1000]">
+				<el-footer class="w-full z-[1000]">
 					<Footer />
 				</el-footer>
 			</el-container>
