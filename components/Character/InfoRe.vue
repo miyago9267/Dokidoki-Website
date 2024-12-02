@@ -1,10 +1,10 @@
 <template>
-<div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[530px] items-center relative">
+<div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[600px] items-center relative">
     <img class="bg object-cover w-full h-[95%] absolute z-[0]" :style="{ backgroundImage: `url(${props.bg})` }" />
     <div class="flex w-[40%] md:h-full h-1/2 relative justify-center z-0">
         <img :src="props.item" alt="" class="absolute md:w-[100px] w-[80px] md:left-10 md:top--10 top-10 left--20">
-        <img :src="charaImage" alt="" class="md:absolute md:w-[450px] md:h-[140%] w-[340px] h-[120%] md:bottom--15 md:right--10">
-        <div class="absolute md:bottom-20 md:left-5 bottom-0 left-40 flex flex-col md:w-250px w-120px md:text-3xl text-2xl">
+        <img :src="charaImage" alt="" class="md:absolute md:w-[450px] md:h-[128%] w-[340px] h-[120%] md:bottom--15 md:right-10">
+        <div class="absolute md:bottom-20 md:left-5 bottom-0 left-40 flex flex-col md:w-300px w-120px md:text-4xl text-2xl">
             <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
             <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
         </div>
