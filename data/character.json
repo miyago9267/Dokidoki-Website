@@ -72,9 +72,9 @@
         "maincolor": "#80ADE1",
         "image": "/images/4.png",
         "bg": "/images/character/akane/bg.png",
-        "item": "/images/character/haru/item.png",
+        "item": "/images/character/hari/item.png",
         "name": "杉野 榛",
-        "spellname": "Sugino Haru",
+        "spellname": "Sugino Hari",
         "intro": {
             "年齡": "18歲，高三生",
             "星座": "金牛座",
@@ -118,9 +118,9 @@
         "maincolor": "#A7D090",
         "image": "/images/6.png",
         "bg": "/images/character/akane/bg.png",
-        "item": "/images/character/hennru/item.png",
+        "item": "/images/character/beru/item.png",
         "name": "小鳥遊 邊瑠",
-        "spellname": "Takanashi Bru",
+        "spellname": "Takanashi Beru",
         "intro": {
             "年齡": "17歲，高二生",
             "星座": "水瓶座",

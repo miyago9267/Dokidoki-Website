@@ -6,7 +6,7 @@
                 :style="{ backgroundColor: chara.color }"
                 @click="chara.controll_panel && togglePanelActive(chara.controll_panel)"
             >
-                <img :src="chara.image" alt="" class="absolute lg:w-70 md:w-60 w-50">
+                <img :src="chara.image" alt="" class="absolute lg:w-65 md:w-55 w-35">
             </div>
         </div>
     </div>
@@ -29,32 +29,32 @@ interface TabEmits {
 const SelectBar: CharaHead[] = [
     {
         color: '#EA99B8',
-        image: '/images/1.png',
+        image: '/images/placehold/akane.png',
         controll_panel: '1'
     },
     {
         color: '#F2DB92',
-        image: '/images/2.png',
+        image: '/images/placehold/kurumi.png',
         controll_panel: '2'
     },
     {
         color: '#A281BC',
-        image: '/images/3.png',
+        image: '/images/placehold/kaoru.png',
         controll_panel: '3'
     },
     {
         color: '#80ADE1',
-        image: '/images/4.png',
+        image: '/images/placehold/hari.png',
         controll_panel: '4'
     },
     {
         color: '#8D3945',
-        image: '/images/5.png',
+        image: '/images/placehold/kaede.png',
         controll_panel: '5'
     },
     {
         color: '#A7D090',
-        image: '/images/6.png',
+        image: '/images/placehold/beru.png',
         controll_panel: '6'
     }
 ]
