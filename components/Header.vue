@@ -1,6 +1,6 @@
 <template>
     <div class="flex h-full w-full">
-		<div class="flex logo">
+		<div class="flex logo pt-[20px]">
             <nuxt-link to="/" class="flex items-center">
                 <img src="/images/doki11.png" class="h-[100%] md:h-[120%] w-[144%] items-center">
             </nuxt-link>

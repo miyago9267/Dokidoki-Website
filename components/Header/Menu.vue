@@ -1,7 +1,7 @@
 <template>
 <nav class="hidden md:block">
     <ul
-        class="flex px-1 pt-5 pb-3 text-xl font-black my-1 rounded-xl"
+        class="flex px-1 pt-7 pb-3 text-xl font-black my-1 rounded-xl"
     >
         <li class="flex items-center list-none hover:bg-[rgba(235,112,208,0.39)] min-w-max rounded-xl"
             v-for="item in menuList" :key="item.name"

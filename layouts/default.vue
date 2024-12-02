@@ -3,7 +3,7 @@
 		<Loading v-if="!isAppLoaded"/>
 		<div class="min-h-screen bg-[#F6F1F1] relative" v-if="isAppLoaded">
 			<el-container class="h-full relative">
-				<el-header class="h-[90px]! mx-[5%]! pt-[20px]! z-[1000]">
+				<el-header class="h-[90px]! mx-[5%]! z-[1000]">
 					<Header />
 				</el-header>
 				<el-container class="main-continaer">
