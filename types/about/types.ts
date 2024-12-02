@@ -32,6 +32,7 @@ export interface Clothe {
 
 export interface CharaInfo {
 	maincolor: string;
+    subcolor: string;
 	image: string;
     bg: string;
     item: string;

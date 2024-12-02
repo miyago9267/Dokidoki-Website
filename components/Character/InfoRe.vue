@@ -2,18 +2,18 @@
 <div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[530px] items-center relative">
     <img class="bg object-cover w-full h-[95%] absolute z-[0]" :style="{ backgroundImage: `url(${props.bg})` }" />
     <div class="flex w-[40%] md:h-full h-1/2 relative justify-center z-0">
-        <img :src="props.item" alt="" class="absolute md:w-[20%] h-[20%] md:left-3 md:top--10 top-10 left--20">
-        <img :src="charaImage" alt="" class="md:absolute md:w-[360px] w-[240px] h-[120%] md:bottom-0 md:right--10">
-        <div class="absolute md:bottom-20 md:left-5 bottom-0 left-40 flex flex-col md:w-250px w-120px text-2xl">
-            <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.maincolor }">#{{ props.hashtags[0] }}</p>
-            <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.maincolor }">#{{ props.hashtags[1] }}</p>
+        <img :src="props.item" alt="" class="absolute md:w-[100px] w-[80px] md:left-10 md:top--10 top-10 left--20">
+        <img :src="charaImage" alt="" class="md:absolute md:w-[450px] md:h-[140%] w-[340px] h-[120%] md:bottom--15 md:right--10">
+        <div class="absolute md:bottom-20 md:left-5 bottom-0 left-40 flex flex-col md:w-250px w-120px md:text-3xl text-2xl">
+            <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
+            <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
         </div>
     </div>
     <div class="flex flex-col h-[110%] w-[60%] md:items-start items-center z-[10]">
         <p class="md:w-[95%] nerd md:text-4xl text-xl mb-[0.5rem] font-bold mt-0 md:text-right md:mr-10"
         :style="{ color: props.maincolor }">{{props.spellname}}</p>
         <p class="md:w-[95%] nerd md:text-6xl text-4xl mb-[0.5rem] font-bold mt-0 md:text-right md:mr-10">{{props.name}}</p>
-        <div class="md:w-full w-40 h-1 bg-[#D5071F] md:mx-2 my-2 z-[20]"></div>
+        <div class="md:w-full w-40 h-1 md:mx-2 my-2 z-[20]" :style="{ backgroundColor: props.subcolor }"></div>
         <p v-html="props.info" class="text-left text-black font-bold w-90 md:w-[80%] md:text-xl text-lg tracking-widest md:leading-[30px] leading-[1.5rem] py-3 break-words mb-0">
         </p>
         <ul class="flex flex-col items-start list-none list-inside pl-0 md:mr-30">

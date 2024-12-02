@@ -1,6 +1,7 @@
 [
     {
         "maincolor": "#EA99B8",
+        "subcolor": "#E17495",
         "image": "/images/character/akane/Akane_uniform_normal.png",
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/akane/item.png",
@@ -24,7 +25,8 @@
     },
     {
         "maincolor": "#F2DB92",
-        "image": "/images/2.png",
+        "subcolor": "#ECB867",
+        "image": "/images/character/kurumi/Kurumi_uniform_normal.png",
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/kurumi/item.png",
         "name": "朝日奈 胡桃",
@@ -40,14 +42,15 @@
         "panel": "2",
         "hashtags": ["天才少女", "完美主義"],
         "clothe": {
-            "服飾一": "/images/2.png",
-            "服飾二": "/images/2.png",
-            "服飾三": "/images/2.png"
+            "服飾一": "/images/character/kurumi/Kurumi_uniform_normal.png",
+            "服飾二": "/images/character/kurumi/Kurumi_uniform_normal.png",
+            "服飾三": "/images/character/kurumi/Kurumi_uniform_normal.png"
         }
     },
     {
         "maincolor": "#A281BC",
-        "image": "/images/3.png",
+        "subcolor": "#8259A7",
+        "image": "/images/character/kaoru/Kaoru_uniform_normal.png",
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/kaoru/item.png",
         "name": "天井 薰",
@@ -63,14 +66,15 @@
         "panel": "3",
         "hashtags": ["科學癡", "毒舌"],
         "clothe": {
-            "服飾一": "/images/3.png",
-            "服飾二": "/images/3.png",
-            "服飾三": "/images/3.png"
+            "服飾一": "/images/character/kaoru/Kaoru_uniform_normal.png",
+            "服飾二": "/images/character/kaoru/Kaoru_uniform_normal.png",
+            "服飾三": "/images/character/kaoru/Kaoru_uniform_normal.png"
         }
     },
     {
         "maincolor": "#80ADE1",
-        "image": "/images/4.png",
+        "subcolor": "#638BC6",
+        "image": "/images/character/hari/Hari_uniform_normal.png",
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/hari/item.png",
         "name": "杉野 榛",
@@ -86,14 +90,15 @@
         "panel": "4",
         "hashtags": ["體保生", "心口不一"],
         "clothe": {
-            "服飾一": "/images/4.png",
-            "服飾二": "/images/4.png",
-            "服飾三": "/images/4.png"
+            "服飾一": "/images/character/hari/Hari_uniform_normal.png",
+            "服飾二": "/images/character/hari/Hari_uniform_normal.png",
+            "服飾三": "/images/character/hari/Hari_uniform_normal.png"
         }
     },
     {
         "maincolor": "#8D3945",
-        "image": "/images/5.png",
+        "subcolor": "#AA525D",
+        "image": "/images/character/kaede/Kaede_uniform_normal.png",
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/kaede/item.png",
         "name": "白雪 楓",
@@ -109,14 +114,15 @@
         "panel": "5",
         "hashtags": ["助人心切", "樂觀開朗"],
         "clothe": {
-            "服飾一": "/images/5.png",
-            "服飾二": "/images/5.png",
-            "服飾三": "/images/5.png"
+            "服飾一": "/images/character/kaede/Kaede_uniform_normal.png",
+            "服飾二": "/images/character/kaede/Kaede_uniform_normal.png",
+            "服飾三": "/images/character/kaede/Kaede_uniform_normal.png"
         }
     },
     {
         "maincolor": "#A7D090",
-        "image": "/images/6.png",
+        "subcolor": "#83AE5D",
+        "image": "/images/character/beru/Beru_uniform_normal.png",
         "bg": "/images/character/akane/bg.png",
         "item": "/images/character/beru/item.png",
         "name": "小鳥遊 邊瑠",
@@ -132,9 +138,9 @@
         "panel": "6",
         "hashtags": ["助人心切", "樂觀開朗"],
         "clothe": {
-            "服飾一": "/images/6.png",
-            "服飾二": "/images/6.png",
-            "服飾三": "/images/6.png"
+            "服飾一": "/images/character/beru/Beru_uniform_normal.png",
+            "服飾二": "/images/character/beru/Beru_uniform_normal.png",
+            "服飾三": "/images/character/beru/Beru_uniform_normal.png"
         }
     }
 ]
