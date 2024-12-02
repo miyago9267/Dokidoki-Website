@@ -1,4 +1,7 @@
 import removeConsole from 'vite-plugin-remove-console';
+import { defineNuxtConfig } from 'nuxt/config';
+import { copySync, existsSync } from 'fs-extra';
+import { resolve } from 'path';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -98,5 +101,22 @@ export default defineNuxtConfig({
 		themes: ['dark'],
 	},
 
-	compatibilityDate: '2024-07-17'
+	compatibilityDate: '2024-07-17',
+	hooks: {
+		'nitro:build:public-assets': () => {
+		  const src = resolve(process.cwd(), 'data'); // 原始資料夾路徑
+		  const dest = resolve(process.cwd(), 'Dokidoki-Website/data'); // 複製目標位置
+
+		  if (existsSync(src)) {
+			try {
+			  copySync(src, dest, { overwrite: true });
+			  console.log(`✔ Successfully copied 'data' to ${dest}`);
+			} catch (err) {
+			  console.error(`❌ Failed to copy 'data':`, err);
+			}
+		  } else {
+			console.warn(`⚠ 'data' folder does not exist at ${src}, skipping copy.`);
+		  }
+		},
+	  },
 });
