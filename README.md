@@ -35,3 +35,9 @@ yarn build
 ```bash=
 yarn preview
 ```
+
+## Windows懶人包
+
+1. 使用`install.exe`自動安裝一次性node.js並安裝自動yarn
+2. 使用`dev.exe`自動部署環境並開啟測試網站
+3. 使用`preview.exe`自動部署環境並產生正式站資料夾，以及開啟預覽網站
