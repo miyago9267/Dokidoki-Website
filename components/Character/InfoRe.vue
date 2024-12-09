@@ -1,24 +1,24 @@
 <template>
 <div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[600px] items-center relative">
     <img class="bg object-cover w-full h-[95%] absolute z-[0]" :style="{ backgroundImage: `url(${props.bg})` }" />
-    <div class="flex md:w-[40%] md:h-full h-1/2 relative justify-center z-0">
-        <div class="lg:block hidden w-full">
+    <div class="flex lg:w-[40%] md:w-[50%] md:h-full h-1/2 relative justify-center z-0">
+        <div class="md:block hidden w-full">
             <div class="flex flex-row h-full">
-                <div class="flex flex-col justify-between h-full">
-                    <div class="self-start">
+                <div class="flex flex-col justify-between h-full w-[50%]">
+                    <div class="self-left">
                         <img :src="props.item" alt="" class="w-[100px]">
                     </div>
-                    <div class="self-end md:w-300px w-120px md:text-4xl text-2xl">
-                        <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
-                        <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
+                    <div class="self-right md:w-300px w-120px md:text-4xl text-2xl">
+                        <p class="font-black lg:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
+                        <p class="font-black lg:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
                     </div>
                 </div>
                 <div class="flex justify-center items-center w-full">
-                    <img :src="charaImage" alt="" class="md:absolute md:w-[450px] md:h-[128%] w-[340px] h-[120%] md:bottom--15">
+                    <img :src="charaImage" alt="" class="md:absolute lg:w-[450px] lg:h-[128%] w-[360px] h-[110%] md:bottom--15">
                 </div>
             </div>
         </div>
-        <div class="lg:hidden block">
+        <div class="md:hidden block">
             <div class="flex flex-row justify-between h-[400px] w-full">
                 <div class="self-start w-[120px]">
                     <img :src="props.item" alt="" class="w-[80px] mt-5">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col h-[110%] w-[60%] md:items-start items-center z-[10]">
+    <div class="flex flex-col h-[110%] lg:w-[60%] md:w-[50%] md:items-start items-center z-[10]">
         <p class="md:w-[95%] nerd md:text-4xl text-xl mb-[0.5rem] font-bold mt-0 md:text-right md:mr-10"
         :style="{ color: props.maincolor }">{{props.spellname}}</p>
         <p class="md:w-[95%] nerd md:text-6xl text-4xl mb-[0.5rem] font-bold mt-0 md:text-right md:mr-10">{{props.name}}</p>

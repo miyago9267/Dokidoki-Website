@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full">
-		<CharacterSelect class="mt-5" @toggle="handleToggle"></CharacterSelect>
+		<CharacterSelect class="my-5" @toggle="handleToggle"></CharacterSelect>
 		<div v-for="chara in CharaList" key="chara.index">
 			<transition name="fade-left">
 				<CharacterInfoRe
