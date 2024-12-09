@@ -1,12 +1,36 @@
 <template>
 <div class="flex md:flex-row flex-col mb-5 py-[10%] md:h-[600px] items-center relative">
     <img class="bg object-cover w-full h-[95%] absolute z-[0]" :style="{ backgroundImage: `url(${props.bg})` }" />
-    <div class="flex w-[40%] md:h-full h-1/2 relative justify-center z-0">
-        <img :src="props.item" alt="" class="absolute md:w-[100px] w-[80px] md:left-10 md:top--10 top-10 left--20">
-        <img :src="charaImage" alt="" class="md:absolute md:w-[450px] md:h-[128%] w-[340px] h-[120%] md:bottom--15 md:right-10">
-        <div class="absolute md:bottom-20 md:left-5 bottom-0 left-40 flex flex-col md:w-300px w-120px md:text-4xl text-2xl">
-            <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
-            <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
+    <div class="flex md:w-[40%] md:h-full h-1/2 relative justify-center z-0">
+        <div class="lg:block hidden w-full">
+            <div class="flex flex-row h-full">
+                <div class="flex flex-col justify-between h-full">
+                    <div class="self-start">
+                        <img :src="props.item" alt="" class="w-[100px]">
+                    </div>
+                    <div class="self-end md:w-300px w-120px md:text-4xl text-2xl">
+                        <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
+                        <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center w-full">
+                    <img :src="charaImage" alt="" class="md:absolute md:w-[450px] md:h-[128%] w-[340px] h-[120%] md:bottom--15">
+                </div>
+            </div>
+        </div>
+        <div class="lg:hidden block">
+            <div class="flex flex-row justify-between h-[400px] w-full">
+                <div class="self-start w-[120px]">
+                    <img :src="props.item" alt="" class="w-[80px] mt-5">
+                </div>
+                <div class="w-[140px] flex justify-center items-center">
+                    <img :src="charaImage" alt="" class="h-[100%]">
+                </div>
+                <div class="self-end w-[120px] md:text-4xl text-2xl">
+                    <p class="font-black md:pl-[10%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[0] }}</p>
+                    <p class="font-black md:pl-[40%] m-[2%] hashtag" :style="{ color: props.subcolor }">#{{ props.hashtags[1] }}</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="flex flex-col h-[110%] w-[60%] md:items-start items-center z-[10]">
