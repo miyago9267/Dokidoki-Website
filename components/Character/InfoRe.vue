@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-center w-full">
-                    <img :src="charaImage" alt="" class="md:absolute lg:w-[450px] lg:h-[128%] w-[360px] h-[110%] md:right--15 md:bottom--15">
+                    <img :src="charaImage" alt="" class="md:absolute lg:w-[450px] lg:h-[128%] w-[360px] h-[110%] md:mr-[5%] md:bottom--15">
                 </div>
             </div>
         </div>
