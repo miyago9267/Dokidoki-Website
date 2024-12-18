@@ -5,7 +5,7 @@
         <div class="md:block hidden w-full">
             <div class="flex flex-row h-full">
                 <div class="flex flex-col justify-between h-full w-[50%]">
-                    <div class="self-left">
+                    <div class="self-left md:ml-[15%]">
                         <img :src="props.item" alt="" class="w-[100px]">
                     </div>
                     <div class="self-right md:w-300px w-120px md:text-4xl text-2xl">
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-center w-full">
-                    <img :src="charaImage" alt="" class="md:absolute lg:w-[450px] lg:h-[128%] w-[360px] h-[110%] md:bottom--15">
+                    <img :src="charaImage" alt="" class="md:absolute lg:w-[450px] lg:h-[128%] w-[360px] h-[110%] md:right--15 md:bottom--15">
                 </div>
             </div>
         </div>
@@ -43,8 +43,8 @@
         <ul class="flex flex-col items-start list-none list-inside pl-0 md:mr-30">
             <li class="md:text-xl text-lg mb-2 text-center" v-for="(val) in introArr">
                 <span class="flex whitespace-nowrap">
-                    <span class="relative font-bold w-[120px] flex justify-center items-center">
-                        <img class="absolute w-[100px] h-[30px] z-[-1]" src="/images/select_bar.png">
+                    <span class="relative font-bold w-[100px] flex justify-center items-center">
+                        <img class="absolute w-[100px] h-[30px] z-[-1] md:mr-[3px]" src="/images/select_bar.png">
                         <span class="text-center z-[1]">{{val[0]}}</span>
                     </span>
                     {{ val[1] }}
